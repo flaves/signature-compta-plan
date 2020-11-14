@@ -3,13 +3,13 @@ require('dotenv').config({
 });
 
 const config = {
-  siteUrl: `https://flav.es`,
+  siteUrl: `https://signature-compta-plan.netlify.app`,
 };
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Flaves`,
-    description: `Gatsby starter for personal project.`,
+    title: `Signature Compta Plan`,
+    description: `Signature Compta Plan.`,
     author: `@flaves`,
     siteUrl: config.siteUrl,
   },
@@ -50,7 +50,7 @@ module.exports = {
         background_color: `#0F111A`,
         theme_color: `#0F111A`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby.png`,
+        icon: `src/images/logo.png`,
       },
     },
     {
