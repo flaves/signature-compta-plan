@@ -74,7 +74,7 @@ const Signature: React.FC<SignatureProps> = ({ data }) => {
                       <img
                         width="120"
                         height="120"
-                        src="https://images.ctfassets.net/n7jonmrvv2j0/6yDT20VI2Kvy990txiaQBs/9bb766cc943273ab0abda35ed2f4283b/logo.png"
+                        src="https://images.ctfassets.net/n7jonmrvv2j0/6yDT20VI2Kvy990txiaQBs/e1b2b764b670c84cff43baf8a69aa489/logo.png"
                         style={{ width: 120, height: 120 }}
                         alt="Logo"
                       />
