@@ -74,7 +74,7 @@ const Signature: React.FC<SignatureProps> = ({ data }) => {
                       <img
                         width="120"
                         height="120"
-                        src="https://images.ctfassets.net/n7jonmrvv2j0/6yDT20VI2Kvy990txiaQBs/e1b2b764b670c84cff43baf8a69aa489/logo.png"
+                        src="https://images.ctfassets.net/n7jonmrvv2j0/6yDT20VI2Kvy990txiaQBs/37b8154ed5b16bdb18cc9972e1721d4e/boule.png"
                         style={{ width: 120, height: 120 }}
                         alt="Logo"
                       />
@@ -156,6 +156,33 @@ const Signature: React.FC<SignatureProps> = ({ data }) => {
                 }}
               >
                 SAVE PAPER - THINK BEFORE YOU PRINT
+              </td>
+            </tr>
+            <tr>
+              <td
+                style={{
+                  color: `#aaaaaa`,
+                  fontSize: 8,
+                }}
+              >
+                AVERTISSEMENT: Ce courriel et tous les fichiers qui y sont
+                attachés sont confidentiels et destinées exclusivement à l’usage
+                de la personne à laquelle ils sont adressés. Les avis et
+                informations qui y sont contenus sont donnés à titre de simples
+                renseignements et sans engagement. Si vous recevez ce message
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                par erreur, merci de le détruire et d'en avertir immédiatement
+                <a
+                  href="mailto:info@comptaplan.be"
+                  style={{
+                    color: `hsl(217, 71%, 40%)`,
+                  }}
+                >
+                  &nbsp;info@comptaplan.be
+                </a>
+                . Veuillez noter que, sauf autorisation expresse, toute
+                divulgation, copie, distribution ou action se fondant sur le
+                contenu de ce courriel est strictement interdite.
               </td>
             </tr>
           </table>
