@@ -163,6 +163,8 @@ const Signature: React.FC<SignatureProps> = ({ data }) => {
                 style={{
                   color: `#aaaaaa`,
                   fontSize: 8,
+                  maxWidth: 460,
+                  textAlign: `justify`,
                 }}
               >
                 AVERTISSEMENT: Ce courriel et tous les fichiers qui y sont
