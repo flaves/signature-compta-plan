@@ -168,7 +168,7 @@ const Signature: React.FC<SignatureProps> = ({ data }) => {
                 }}
               >
                 AVERTISSEMENT: Ce courriel et tous les fichiers qui y sont
-                attachés sont confidentiels et destinées exclusivement à l’usage
+                attachés sont confidentiels et destinés exclusivement à l’usage
                 de la personne à laquelle ils sont adressés. Les avis et
                 informations qui y sont contenus sont donnés à titre de simples
                 renseignements et sans engagement. Si vous recevez ce message
