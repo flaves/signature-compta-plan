@@ -21,6 +21,17 @@ export const query = graphql`
         }
       }
     }
+    allContentfulSignatureLogo(limit: 1) {
+      edges {
+        node {
+          logo {
+            file {
+              url
+            }
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -31,13 +42,28 @@ interface HomeProps {
         node: SignatureType;
       }[];
     };
+    allContentfulSignatureLogo: {
+      edges: {
+        node: {
+          logo: {
+            file: {
+              url: string;
+            };
+          };
+        };
+      }[];
+    };
   };
 }
 
-const Home: React.FC<HomeProps> = ({ data: { allContentfulSignature } }) => {
+const Home: React.FC<HomeProps> = ({
+  data: { allContentfulSignature, allContentfulSignatureLogo },
+}) => {
   const [value, setValue] = useState<string>(``);
 
   const signatures = allContentfulSignature.edges.map((item) => item.node);
+  const logo = allContentfulSignatureLogo.edges.map((item) => item.node)[0].logo
+    .file.url;
 
   const renderSignatures = () => (
     <ul
@@ -64,7 +90,7 @@ const Home: React.FC<HomeProps> = ({ data: { allContentfulSignature } }) => {
         )
         .map((signature) => (
           <li key={signature.id}>
-            <Signature data={signature} />
+            <Signature data={signature} logo={logo} />
           </li>
         ))}
     </ul>

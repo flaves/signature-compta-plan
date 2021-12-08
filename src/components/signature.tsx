@@ -4,9 +4,10 @@ import { SignatureType } from '../types/signature';
 
 interface SignatureProps {
   data: SignatureType;
+  logo: string;
 }
 
-const Signature: React.FC<SignatureProps> = ({ data }) => {
+const Signature: React.FC<SignatureProps> = ({ data, logo }) => {
   const [content, setContent] = useState<string>(``);
 
   useEffect(() => {
@@ -74,7 +75,7 @@ const Signature: React.FC<SignatureProps> = ({ data }) => {
                       <img
                         width="120"
                         height="120"
-                        src="https://images.ctfassets.net/n7jonmrvv2j0/6yDT20VI2Kvy990txiaQBs/37b8154ed5b16bdb18cc9972e1721d4e/boule.png"
+                        src={`https:${logo}`}
                         style={{ width: 120, height: 120 }}
                         alt="Logo"
                       />
