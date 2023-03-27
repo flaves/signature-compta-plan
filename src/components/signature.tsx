@@ -190,7 +190,7 @@ const Signature: React.FC<SignatureProps> = ({ data, logo }) => {
             </tr>
             <tr>
               <td>
-                <img src="https://images.ctfassets.net/n7jonmrvv2j0/6YcG7IRBx7vkdZcUtgRyy3/a08479b3b770dd827115a70a13741683/Gazelles__343x194_.png?h=200" />
+                <img src="https://images.ctfassets.net/n7jonmrvv2j0/6YcG7IRBx7vkdZcUtgRyy3/a08479b3b770dd827115a70a13741683/Gazelles__343x194_.png?h=100" />
               </td>
             </tr>
           </table>
