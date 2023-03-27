@@ -188,6 +188,11 @@ const Signature: React.FC<SignatureProps> = ({ data, logo }) => {
                 contenu de ce courriel est strictement interdite.
               </td>
             </tr>
+            <tr>
+              <td>
+                <img src="https://images.ctfassets.net/n7jonmrvv2j0/6YcG7IRBx7vkdZcUtgRyy3/a08479b3b770dd827115a70a13741683/Gazelles__343x194_.png?h=200" />
+              </td>
+            </tr>
           </table>
         </body>
       </html>
