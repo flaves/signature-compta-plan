@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import { css, Global } from '@emotion/react';
 import { graphql } from 'gatsby';
-
 import Layout from '../components/layout';
-import SEO from '../components/helpers/seo';
 import Signature from '../components/signature';
-
 import { SignatureType } from '../types/signature';
 
 export const query = graphql`
@@ -56,9 +53,10 @@ interface HomeProps {
   };
 }
 
-const Home: React.FC<HomeProps> = ({
-  data: { allContentfulSignature, allContentfulSignatureLogo },
-}) => {
+function Home(props: HomeProps) {
+  const {
+    data: { allContentfulSignature, allContentfulSignatureLogo },
+  } = props;
   const [value, setValue] = useState<string>(``);
 
   const signatures = allContentfulSignature.edges.map((item) => item.node);
@@ -105,10 +103,12 @@ const Home: React.FC<HomeProps> = ({
           *:before {
             box-sizing: inherit;
           }
+
           html {
             font-family: sans-serif;
             height: 100%;
           }
+
           body {
             box-sizing: border-box;
             margin: 0;
@@ -116,7 +116,6 @@ const Home: React.FC<HomeProps> = ({
           }
         `}
       />
-      <SEO title="Home" />
       <section
         css={css`
           padding: 20px;
@@ -139,6 +138,6 @@ const Home: React.FC<HomeProps> = ({
       </section>
     </Layout>
   );
-};
+}
 
 export default Home;
